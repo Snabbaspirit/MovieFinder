@@ -1,0 +1,123 @@
+@import '../../../variables.scss';
+
+.movie-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color: F7F8FE;
+}
+
+// commons movie page styles
+
+.movieInfo__icon {
+    background: linear-gradient(
+        180deg,
+        rgba(64, 48, 61, 0) 0%,
+        rgba(0, 0, 0, 0.2275) 100%
+    );
+    border-radius: 30px;
+    margin-right: 60px;
+    max-height: 800px;
+    max-width: 600px;
+}
+
+.movieInfo__title {
+    font-size: 40px;
+    line-height: 70px;
+    text-align: left;
+}
+
+.movieInfo__descr {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: left;
+    color: #2d2d2d;
+    mix-blend-mode: normal;
+    opacity: 0.85;
+}
+
+.movieInfo__content-wapper {
+    border-bottom: 1px solid #d9dadb;
+}
+
+.movieInfo-button__wrapper {
+    margin-top: 20px;
+    position: relative;
+}
+
+.movieInfo__button {
+    padding: 26px 34px;
+    background: #ffffff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 200px;
+    border: none;
+}
+
+.movieInfo__wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+}
+
+.movieInfo-button__icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.horror-info-container {
+    @extend .movie-info-container;
+    background: $horrorLightColor;
+}
+
+.comedy-info-container {
+    @extend .movie-info-container;
+    background: $comedyColor;
+}
+
+.fantasy-info-container {
+    @extend .movie-info-container;
+    background: $fantasyColor;
+}
+
+.description {
+    letter-spacing: 2px;
+}
+
+.horror-font {
+    @extend .description;
+    font-family: $horrorFont;
+}
+
+.comedy-font {
+    @extend .description;
+    font-family: $comedyFont;
+}
+
+.fantasy-font {
+    @extend .description;
+    font-family: $fantasyFont;
+}
+
+.added-to-favorites {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .movieInfo {
+        flex-direction: column;
+    }
+
+    .movieInfo__icon {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .movie-info-container {
+padding: 50px;
+    }
+}

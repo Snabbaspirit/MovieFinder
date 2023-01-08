@@ -1,0 +1,51 @@
+@import '../../../variables.scss';
+
+.arrow {
+    min-width: 70px;
+    min-height: 70px;
+
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+.arrow-left-horror {
+    @extend .arrow;
+    fill: $horrorColor;
+}
+
+.arrow-right-horror {
+    @extend .arrow-left-horror;
+    transform: scale(-1, 1);
+}
+
+.arrow-left-comedy {
+    @extend .arrow;
+    fill: $comedyColor;
+}
+
+.arrow-right-comedy {
+    @extend .arrow-left-comedy;
+    transform: scale(-1, 1);
+}
+
+.arrow-left-fantasy {
+    @extend .arrow;
+    fill: $fantasyColor;
+}
+
+.arrow-right-fantasy {
+    @extend .arrow-left-fantasy;
+    transform: scale(-1, 1);
+}
+
+.carousel__container {
+    display: flex;
+    align-items: center;
+    margin: 100px 0 100px 50px;
+}
+
+.inner-container {
+    display: flex;
+    overflow: hidden;
+}

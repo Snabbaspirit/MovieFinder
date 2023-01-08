@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey');
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+$horrorColor: #f1995e;
+$horrorLightColor: #eebfa1;
+$comedyColor: #70d198;
+$fantasyColor: #7471e8;
+
+$horrorFont: 'Creepster';
+$comedyFont: 'Happy Monkey';
+$fantasyFont: 'MedievalSharp';
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    background: #2F2D50;
+}
+
+// resets
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}

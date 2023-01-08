@@ -1,0 +1,50 @@
+@import '../../../variables.scss';
+
+.preview-card-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 1s;
+}
+
+.preview-card-container:hover {
+    z-index: 50;
+    transform: scale(1.1);
+}
+
+.title-container {
+    height: 75px;
+    position: absolute;
+    opacity: 0.7;
+    bottom: 15px;
+    left: 5px;
+    border-radius: 20px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.preview__title {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.title-container-horror {
+    @extend .title-container;
+    background: $horrorColor;
+}
+
+.title-container-comedy {
+    @extend .title-container;
+    background: $comedyColor;
+}
+
+.title-container-fantasy {
+    @extend .title-container;
+    background: $fantasyColor;
+}
+
+.preview-image {
+    width: 450px;
+    height: 250px;
+}

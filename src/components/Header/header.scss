@@ -1,0 +1,63 @@
+@import '../../../variables.scss';
+
+.header-container {
+    height: 100px;
+    background-color: #201F3F;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 20px;
+    display: flex;
+    cursor: pointer;
+    color: #fefefe;
+}
+
+.favorites-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__favorites {
+    position: relative;
+    cursor: pointer;
+}
+
+.favorite-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 35px;
+}
+
+.favorite-movies-text {
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+}
+
+@media (max-width: 550px) {
+    .header__title  {
+        font-size: 22px;
+    }
+   
+}
+
+@media (max-width: 450px) {
+    .header-container {
+        padding-left: 50px;
+justify-content: flex-start;
+    }
+   
+}
