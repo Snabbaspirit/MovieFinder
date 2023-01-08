@@ -25,7 +25,7 @@ export const Carousel = (props) => {
                 to: prev.to + DISPLAY_DATA_COUNT
             };
         });
-    }
+    };
 
     const handleShowPrevious = () => {
         if (itemsToDisplay.from === 0) {
@@ -39,7 +39,7 @@ export const Carousel = (props) => {
                 to: prev.to - DISPLAY_DATA_COUNT
             };
         });
-    }
+    };
 
     return (
         <div className="carousel__container">

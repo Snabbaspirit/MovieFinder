@@ -28,7 +28,7 @@ export const Movie = () => {
 
     return (
         <div className={getStylesByGenre(appearence).movieInfo}>
-            <div  className="movieInfo" style={{ display: 'flex' }}>
+            <div className="movieInfo" style={{ display: 'flex' }}>
                 <img
                     className="movieInfo__icon"
                     src={`${IMAGE_URL}${elem.poster_path}`}

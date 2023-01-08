@@ -9,7 +9,6 @@ export const FavoritesModal = ({ setIsModalOpen }) => {
 
     return (
         <div className="modal">
-           
             <p className="modal__title">My favorite movies</p>
             <div className="modal__content">
                 {favorites.length === 0 ? (
@@ -27,7 +26,6 @@ export const FavoritesModal = ({ setIsModalOpen }) => {
                         );
                     })
                 )}
-                
             </div>
 
             <Cross

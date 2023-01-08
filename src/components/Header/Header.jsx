@@ -12,24 +12,22 @@ export const Header = () => {
     const [{ favorites }] = useAppContext();
 
     return (
-       <div>
-        <div className="header-container">
-            <Link to={'/'} style={{ textDecoration: 'none' }}>
-                <h1 className="header__title">Movies finder</h1>
-            </Link>
-            <div className="favorites-container">
-                <div
-                    className="header__favorites"
-                    onClick={() => setIsModalOpen((p) => !p)}
-                >
-                    <Favorites />{' '}
-                    <p className="favorite-count">{favorites.length}</p>
+        <div>
+            <div className="header-container">
+                <Link to={'/'} style={{ textDecoration: 'none' }}>
+                    <h1 className="header__title">Movies finder</h1>
+                </Link>
+                <div className="favorites-container">
+                    <div
+                        className="header__favorites"
+                        onClick={() => setIsModalOpen((p) => !p)}
+                    >
+                        <Favorites />{' '}
+                        <p className="favorite-count">{favorites.length}</p>
+                    </div>
                 </div>
             </div>
-
-            
-        </div>
-        {isModalOpen && <FavoritesModal setIsModalOpen={setIsModalOpen} />}
+            {isModalOpen && <FavoritesModal setIsModalOpen={setIsModalOpen} />}
         </div>
     );
 };
