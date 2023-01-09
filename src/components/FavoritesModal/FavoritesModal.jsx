@@ -8,7 +8,11 @@ export const FavoritesModal = ({ setIsModalOpen }) => {
     const [{ favorites }] = useAppContext();
 
     return (
-        <div className="modal">
+        <div
+            // data-testid='cross-icon'
+
+            className="modal"
+        >
             <p className="modal__title">My favorite movies</p>
             <div className="modal__content">
                 {favorites.length === 0 ? (
@@ -29,6 +33,7 @@ export const FavoritesModal = ({ setIsModalOpen }) => {
             </div>
 
             <Cross
+                data-testid="cross"
                 className="cross__icon"
                 onClick={() => setIsModalOpen((p) => !p)}
             />

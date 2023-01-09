@@ -16,18 +16,17 @@ export const Movie = () => {
 
     const [{ favorites }, { onSetFavorites }] = useAppContext();
 
-    const fontClass = React.useMemo(
-        () => getStylesByGenre(appearence).font,
-        [getStylesByGenre, appearence]
-    );
+    const fontClass = getStylesByGenre(appearence).font;
 
-    const isAlreadyExist = React.useMemo(
-        () => favorites.some((favorite) => favorite.id === elem.id),
-        [favorites]
+    const isAlreadyExist = favorites.some(
+        (favorite) => favorite.id === elem.id
     );
 
     return (
-        <div className={getStylesByGenre(appearence).movieInfo}>
+        <div
+            data-testid="movie-card-wrapper"
+            className={getStylesByGenre(appearence).movieInfo}
+        >
             <div className="movieInfo" style={{ display: 'flex' }}>
                 <img
                     className="movieInfo__icon"
@@ -48,6 +47,7 @@ export const Movie = () => {
 
                     <div className="movieInfo-button__wrapper">
                         <button
+                            data-testid="add-remove-button"
                             onClick={() => {
                                 if (isAlreadyExist) {
                                     onSetFavorites((p) =>
