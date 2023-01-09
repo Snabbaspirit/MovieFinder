@@ -16,13 +16,13 @@ export const PreviewCard = ({ elem, appearence }) => {
             }}
         >
             <div className={getStylesByGenre(appearence).preview}>
-                <h2
+                <p
                     className={`${
                         getStylesByGenre(appearence).font
                     } preview__title`}
                 >
                     {elem.original_title}
-                </h2>
+                </p>
             </div>
             <img
                 className="preview-image"

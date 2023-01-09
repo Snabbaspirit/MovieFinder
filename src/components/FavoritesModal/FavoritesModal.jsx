@@ -1,7 +1,7 @@
 import React from 'react';
 import './favorites-modal.scss';
 import { IMAGE_URL } from '../../constants/constants';
-import { useAppContext } from '../../appContext';
+import { useAppContext } from '../../context/appContext';
 import { ReactComponent as Cross } from '../../svg/cross.svg';
 
 export const FavoritesModal = ({ setIsModalOpen }) => {

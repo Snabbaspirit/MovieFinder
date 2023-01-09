@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { IMAGE_URL } from '../../constants/constants';
 import './movie.scss';
 import { getStylesByGenre } from '../../utils/utils';
-import { useAppContext } from '../../appContext';
+import { useAppContext } from '../../context/appContext';
 import { ReactComponent as Checked } from '../../svg/checked.svg';
 import { ReactComponent as TrashIcon } from '../../svg/trash-icon.svg';
 

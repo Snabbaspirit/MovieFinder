@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Movie } from '../components/Movie/Movie';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { useAppContext } from '../appContext';
+import { useAppContext } from '../context/appContext';
 import { renderHook } from '@testing-library/react-hooks';
 
 function mockFunction() {

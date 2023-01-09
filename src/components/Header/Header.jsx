@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAppContext } from '../../appContext';
+import { useAppContext } from '../../context/appContext';
 import './header.scss';
 import { ReactComponent as Favorites } from '../../svg/heart.svg';
 import { useState } from 'react';
